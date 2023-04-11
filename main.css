@@ -42,13 +42,14 @@ body{
 
 .image-container img{
     width: 100%;
+    height: 100%;
 }
 
 .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-height: 289.79px;
+    /* max-height: 289.79px; */
     top: 0;
     left: 0;
     background-color: hsla(178, 100%, 50%, 0.5);
@@ -74,7 +75,7 @@ body{
     color: hsl(0, 0%, 100%);
 }
 
-.title:hover, .creator__name:hover{
+.title:hover,.title:active, .creator__name:hover, .creator__name:active{
     cursor: pointer;
     color:hsl(178, 100%, 50%);
 }
@@ -135,57 +136,6 @@ body{
     .overlay{
         max-height: 480px;
     }
-    .title{
-        font-size: 2rem;
-    }
-    
-    .description{
-        font-size: 1.75rem;
-    }
-
-    .nft-info{
-        font-size: 1.75rem;
-        border-bottom: 3px solid hsl(215, 32%, 27%);
-    }
-
-    .eth-icon{
-        height: 1.5rem;
-    }
-
-    .clock-icon{
-        height: 1.5rem;
-    }
-
-    .creator{
-        font-size: 1.75rem;
-    }
-
-    .avatar-container{
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    .creator p{
-        margin-top: 1rem;
-    }
-
-}
-
-@media screen and (min-width: 1440px){
-    .card{
-        max-width: 33rem;
-        max-height: 58rem;
-    }
-
-    .image-container{
-        width: 100%;
-    }
-
-    .image-container img{
-        width: 100%;
-        max-height: 30rem;
-    }
-
     .title{
         font-size: 2rem;
     }
